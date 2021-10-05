@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnModify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="btnNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="chkActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Col_DispOrd_Desc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Col_DispOrd_ItemNo" xml:space="preserve">
+    <value>Item No</value>
+  </data>
+  <data name="Col_DispOrd_ShortDesc" xml:space="preserve">
+    <value>Short Description</value>
+  </data>
+  <data name="Col_Inv_ItemName" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="Col_Inv_Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Col_Inv_UOM" xml:space="preserve">
+    <value>UOM</value>
+  </data>
+  <data name="Col_ItemLst_Docdt" xml:space="preserve">
+    <value>DocDt</value>
+  </data>
+  <data name="Col_ItemLst_DocNo" xml:space="preserve">
+    <value>DocNo</value>
+  </data>
+  <data name="Col_ItemLst_Doctype" xml:space="preserve">
+    <value>DocType</value>
+  </data>
+  <data name="DisplayOrder" xml:space="preserve">
+    <value>Display Order</value>
+  </data>
+  <data name="gbCreditNote" xml:space="preserve">
+    <value>Credit Note</value>
+  </data>
+  <data name="gbCustomer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="gbExchange" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
+  <data name="gbInvoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="gbItem" xml:space="preserve">
+    <value>Item Trans</value>
+  </data>
+  <data name="gbItemTrans" xml:space="preserve">
+    <value>Item Trans</value>
+  </data>
+  <data name="gbOrderNo" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="gbPrinterSettings" xml:space="preserve">
+    <value>Printer Settings</value>
+  </data>
+  <data name="gbReceipt" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="gbReturn" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="Inv_lblLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Inventory" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="Item_lblDocDate" xml:space="preserve">
+    <value>Document Date . . . . . . . . .</value>
+  </data>
+  <data name="Item_lblDocNo" xml:space="preserve">
+    <value>Document No . . . . . . . . . . .</value>
+  </data>
+  <data name="Item_lblType" xml:space="preserve">
+    <value>Type. . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="ItemTransaction" xml:space="preserve">
+    <value>Item Transaction</value>
+  </data>
+  <data name="ItemTransList" xml:space="preserve">
+    <value>Item Transaction List</value>
+  </data>
+  <data name="MDT_lblAgent" xml:space="preserve">
+    <value>Agent . . . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblAreYou" xml:space="preserve">
+    <value>Are you Printing by WLAN . . . .</value>
+  </data>
+  <data name="MDT_lblCreditLast" xml:space="preserve">
+    <value>Last Crdt No . . . . .</value>
+  </data>
+  <data name="MDT_lblCustLast" xml:space="preserve">
+    <value>Last Cust No . . . . .</value>
+  </data>
+  <data name="MDT_lblDesc" xml:space="preserve">
+    <value>Description . . . . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblDotPrint" xml:space="preserve">
+    <value>Dot Print Port . . . . . . .</value>
+  </data>
+  <data name="MDT_lblDotPrintBaud" xml:space="preserve">
+    <value>Dot Print Baud . . . . . . .</value>
+  </data>
+  <data name="MDT_lblExchLast" xml:space="preserve">
+    <value>Last Excg No . . . . .</value>
+  </data>
+  <data name="MDT_lblInvLast" xml:space="preserve">
+    <value>Last Inv. No . . . . .</value>
+  </data>
+  <data name="MDT_lblItemLast" xml:space="preserve">
+    <value>Last Item No . . . . .</value>
+  </data>
+  <data name="MDT_lblLastOrdNo" xml:space="preserve">
+    <value>Last Order No . . . .</value>
+  </data>
+  <data name="MDT_lblMDTID" xml:space="preserve">
+    <value>MDT ID . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblOrdLen" xml:space="preserve">
+    <value>Length . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblOrdPrefix" xml:space="preserve">
+    <value>Prefix . . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblPrintBaud" xml:space="preserve">
+    <value>Print Baud . . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblPrinter" xml:space="preserve">
+    <value>Printer . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblPrinterIP" xml:space="preserve">
+    <value>Printer IP . . . . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblPrinterNet" xml:space="preserve">
+    <value>Printer Net Port . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblPrintPort" xml:space="preserve">
+    <value>Print Port . . . . . . . . . .</value>
+  </data>
+  <data name="MDT_lblRecptLast" xml:space="preserve">
+    <value>Last Rec No . . . . . .</value>
+  </data>
+  <data name="MDT_lblRetLast" xml:space="preserve">
+    <value>Last Ret No . . . . . .</value>
+  </data>
+  <data name="MDTManagement" xml:space="preserve">
+    <value>MDT Management</value>
+  </data>
+  <data name="Msg_DocNo" xml:space="preserve">
+    <value>Sorry! Please Select Document No</value>
+  </data>
+  <data name="Msg_DocType" xml:space="preserve">
+    <value>Sorry! Please Select Document Type</value>
+  </data>
+  <data name="Msg_Empty_CustNo" xml:space="preserve">
+    <value>Please Enter Last Customer No</value>
+  </data>
+  <data name="Msg_Empty_Desc" xml:space="preserve">
+    <value>Please Enter Description</value>
+  </data>
+  <data name="Msg_Empty_ExhNo" xml:space="preserve">
+    <value>Please Enter Last Exchange No</value>
+  </data>
+  <data name="Msg_Empty_InvNo" xml:space="preserve">
+    <value>Please Enter Last Invoice No</value>
+  </data>
+  <data name="Msg_Empty_ItemNo" xml:space="preserve">
+    <value>Please Enter Last Item No</value>
+  </data>
+  <data name="Msg_Empty_OrdLen" xml:space="preserve">
+    <value>Please Enter Order Length</value>
+  </data>
+  <data name="Msg_Empty_OrdNo" xml:space="preserve">
+    <value>Please Enter Last Order No</value>
+  </data>
+  <data name="Msg_Empty_OrdPrf" xml:space="preserve">
+    <value>Please Enter Order Prefix </value>
+  </data>
+  <data name="Msg_Empty_Receasd" xml:space="preserve">
+    <value>Please Enter Last CR No</value>
+  </data>
+  <data name="Msg_Empty_ReceNo" xml:space="preserve">
+    <value>Please Enter Last Receipt No</value>
+  </data>
+  <data name="Msg_Empty_RetNo" xml:space="preserve">
+    <value>Please Enter Last Return No</value>
+  </data>
+  <data name="Msg_Inventry" xml:space="preserve">
+    <value>Inventory Saved</value>
+  </data>
+  <data name="Msg_Inventry_Cap" xml:space="preserve">
+    <value>New Record</value>
+  </data>
+  <data name="Msg_ItemTran" xml:space="preserve">
+    <value>Item Transaction Saved</value>
+  </data>
+  <data name="Msg_Location" xml:space="preserve">
+    <value>Sorry! Please Select Location</value>
+  </data>
+  <data name="Msg_OrdMody" xml:space="preserve">
+    <value>Record Order Modified</value>
+  </data>
+  <data name="Msg_OrdMody_Cap" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Msg_RecordNotSaved" xml:space="preserve">
+    <value>Record is not saved. Do you want to discard changes?</value>
+  </data>
+  <data name="Msg_RecordNotSaved_Cap" xml:space="preserve">
+    <value>Discard?</value>
+  </data>
+  <data name="Msg_Save" xml:space="preserve">
+    <value>Do you want to save?</value>
+  </data>
+  <data name="Msg_Save_Cap" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="Msg_UpdatesSuccess" xml:space="preserve">
+    <value>Record Updated Successfully</value>
+  </data>
+  <data name="Msg_UpdatesSuccess_Cap" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="SysSet_lblBankAcnt" xml:space="preserve">
+    <value>Bank Account . . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="SysSet_lblCompName" xml:space="preserve">
+    <value>Company Name . . . . . . . . . . . .</value>
+  </data>
+  <data name="SysSet_lblFooter1" xml:space="preserve">
+    <value>Footer</value>
+  </data>
+  <data name="SysSet_lblGST" xml:space="preserve">
+    <value>GST . . . . . . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="SysSet_lblHeader1" xml:space="preserve">
+    <value>Header</value>
+  </data>
+  <data name="SysSet_lblHistNo" xml:space="preserve">
+    <value>History No . . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="SysSet_lblHistUnit" xml:space="preserve">
+    <value>History Unit . . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="SysSet_lblMax" xml:space="preserve">
+    <value>Max. Invoice Print . . . . . . . . . . . </value>
+  </data>
+  <data name="SysSet_lblMdtNo" xml:space="preserve">
+    <value>MDT No . . . . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="SysSet_lblMemItemNo" xml:space="preserve">
+    <value>Membership Item No . . . . . . . . . . </value>
+  </data>
+  <data name="SystemSettings" xml:space="preserve">
+    <value>System Settings</value>
+  </data>
+  <data name="UserSet_lblAccessLevel" xml:space="preserve">
+    <value>Access Level . . . . . . . . . . .</value>
+  </data>
+  <data name="UserSet_lblPassword" xml:space="preserve">
+    <value>Password . . . . . . . . . . . . . .</value>
+  </data>
+  <data name="UserSet_lblRePassword" xml:space="preserve">
+    <value>Re-enter Password . . . . . . .</value>
+  </data>
+  <data name="UserSet_lblUserCode" xml:space="preserve">
+    <value>User Code . . . . . . . . . . . . .</value>
+  </data>
+  <data name="UserSet_lblUserName" xml:space="preserve">
+    <value>User Name . . . . . . . . . . . . .</value>
+  </data>
+  <data name="UserSet_lblUserType" xml:space="preserve">
+    <value>User Type . . . . . . . . . . . . .</value>
+  </data>
+  <data name="UserSettings" xml:space="preserve">
+    <value>User Administration</value>
+  </data>
+</root>

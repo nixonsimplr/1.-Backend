@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0DC66FCF-9704-4488-9F36-8617B41564CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>SalesPromo</RootNamespace>
+    <AssemblyName>SalesPromo</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SalesPromo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SalesPromo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>SalesPromo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>SalesPromo.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankInSlipRpt.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankInSlipRpt.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Barcodes.Designer.vb">
+      <DependentUpon>Barcodes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Barcodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsignmentOrder.Designer.vb">
+      <DependentUpon>ConsignmentOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsignmentOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsignmentQty.Designer.vb">
+      <DependentUpon>ConsignmentQty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsignmentQty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesTargetByMonth.Designer.vb">
+      <DependentUpon>SalesTargetByMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesTargetByMonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password.Designer.vb">
+      <DependentUpon>Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComboValues.vb" />
+    <Compile Include="Commission.Designer.vb">
+      <DependentUpon>Commission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Commission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommMaster.Designer.vb">
+      <DependentUpon>CommMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CommMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayOrder.Designer.vb">
+      <DependentUpon>DisplayOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.Designer.vb">
+      <DependentUpon>frmPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsInventory.Designer.vb">
+      <DependentUpon>GoodsInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.designer.vb">
+      <DependentUpon>Inventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemPrAdjustments.Designer.vb">
+      <DependentUpon>ItemPrAdjustments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemPrAdjustments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemTrans.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemTrans.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ItemTransaction.designer.vb">
+      <DependentUpon>ItemTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemTransList.Designer.vb">
+      <DependentUpon>ItemTransList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemTransList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoyaltyByItem.Designer.vb">
+      <DependentUpon>LoyaltyByItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoyaltyByItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoyaltyPerDollar.Designer.vb">
+      <DependentUpon>LoyaltyPerDollar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoyaltyPerDollar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoyaltyRedemptionByItem.Designer.vb">
+      <DependentUpon>LoyaltyRedemptionByItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoyaltyRedemptionByItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoyaltyRedemptionPerDollar.Designer.vb">
+      <DependentUpon>LoyaltyRedemptionPerDollar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoyaltyRedemptionPerDollar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDTList.Designer.vb">
+      <DependentUpon>MDTList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDTList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDTManagement.designer.vb">
+      <DependentUpon>MDTManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDTManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDTSalesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MDTSalesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Membership.Designer.vb">
+      <DependentUpon>Membership.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Membership.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PO.Designer.vb">
+      <DependentUpon>PO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PODataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="POList.Designer.vb">
+      <DependentUpon>POList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostDatedCheque.Designer.vb">
+      <DependentUpon>PostDatedCheque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PostDatedCheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReasonMaster.Designer.vb">
+      <DependentUpon>ReasonMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReasonMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesTargetQty.Designer.vb">
+      <DependentUpon>SalesTargetQty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesTargetQty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceMaster.Designer.vb">
+      <DependentUpon>ServiceMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetPassword.Designer.vb">
+      <DependentUpon>SetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SpecialItems.Designer.vb">
+      <DependentUpon>SpecialItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSettings.Designer.vb">
+      <DependentUpon>SystemSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSettings.designer.vb">
+      <DependentUpon>UserSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReport.Designer.vb">
+      <DependentUpon>ViewReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Voucher.Designer.vb">
+      <DependentUpon>Voucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Voucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoucherDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherList.Designer.vb">
+      <DependentUpon>VoucherList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BankInSlipRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BankInSlipRpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcodes.resx">
+      <DependentUpon>Barcodes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsignmentOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConsignmentOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsignmentQty.resx">
+      <DependentUpon>ConsignmentQty.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesTargetByMonth.resx">
+      <DependentUpon>SalesTargetByMonth.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.resx">
+      <DependentUpon>Password.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commission.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Commission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommMaster.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CommMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisplayOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsInventory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GoodsInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemPrAdjustments.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ItemPrAdjustments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemTransaction.resx">
+      <DependentUpon>ItemTransaction.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemTransList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ItemTransList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoyaltyByItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoyaltyByItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoyaltyPerDollar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoyaltyPerDollar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoyaltyRedemptionByItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoyaltyRedemptionByItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoyaltyRedemptionPerDollar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoyaltyRedemptionPerDollar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDTList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDTList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDTManagement.resx">
+      <DependentUpon>MDTManagement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Membership.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Membership.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>POList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostDatedCheque.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PostDatedCheque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReasonMaster.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReasonMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesPromo.en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesPromo.fr-FR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesTargetQty.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SalesTargetQty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceMaster.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ServiceMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialItems.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpecialItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SystemSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSettings.resx">
+      <DependentUpon>UserSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Voucher.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Voucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoucherList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VoucherList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ItemTrans.xsc">
+      <DependentUpon>ItemTrans.xsd</DependentUpon>
+    </None>
+    <None Include="ItemTrans.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemTrans.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ItemTrans.xss">
+      <DependentUpon>ItemTrans.xsd</DependentUpon>
+    </None>
+    <None Include="MDTSalesDataSet.xsc">
+      <DependentUpon>MDTSalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MDTSalesDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MDTSalesDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="MDTSalesDataSet.xss">
+      <DependentUpon>MDTSalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PODataSet.xsc">
+      <DependentUpon>PODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PODataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PODataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PODataSet.xss">
+      <DependentUpon>PODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet1.xsc">
+      <DependentUpon>SalesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesDataSet1.xss">
+      <DependentUpon>SalesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet2.xsc">
+      <DependentUpon>SalesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesDataSet2.xss">
+      <DependentUpon>SalesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet3.xsc">
+      <DependentUpon>SalesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesDataSet3.xss">
+      <DependentUpon>SalesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet4.xsc">
+      <DependentUpon>SalesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SalesDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesDataSet4.xss">
+      <DependentUpon>SalesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="VoucherDataSet.xsc">
+      <DependentUpon>VoucherDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VoucherDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="VoucherDataSet.xss">
+      <DependentUpon>VoucherDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataInterface\DataInterface.vbproj">
+      <Project>{5A9E1529-26D1-4A82-903D-502C7FD14D9F}</Project>
+      <Name>DataInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataSync\DataSync\DataSync.vbproj">
+      <Project>{A70C0AE9-575D-482F-AACF-F1DC86CA13AC}</Project>
+      <Name>DataSync</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SalesInterface\SalesInterface\SalesInterface.vbproj">
+      <Project>{9F994E9F-EC65-46FB-8A4C-8C7ABD797DF5}</Project>
+      <Name>SalesInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
